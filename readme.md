@@ -21,3 +21,9 @@ El siguiente comando le desplegara el modo producción
 ```
 npm run build
 ```
+
+El siguiente comando desplegara los cambios en producción
+```
+npm run deploy
+```
+
