@@ -1,6 +1,6 @@
 const n = (() => {
   const t = () => {
-    console.log("funci\xF3n ejecutada");
+    console.log("funci\xF3n ejecutadaa");
   };
   return {
     childsTest: function() {

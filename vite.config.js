@@ -18,7 +18,7 @@ export default defineConfig({
     devtool: 'source-map',
     watch: true,
     target: "es2015",
-    outDir: '../public_html/theme/',
+    outDir: '../dist/',
     emptyOutDir: false,
   },
 });
