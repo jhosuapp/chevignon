@@ -1,7 +1,7 @@
 const Test = (()=>{
 
     const TestConfig = ()=>{
-        console.log('función a');
+        console.log('Ultima funcionalidad test');
     }
 
 

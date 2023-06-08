@@ -1,19 +1,19 @@
 const n = (() => {
   const t = () => {
-    console.log("funci\xF3n ejecutadaa");
+    console.log("Ultima funcionalidad test");
   };
   return {
     childsTest: function() {
       try {
         t();
-      } catch (s) {
+      } catch (e) {
       }
     }
   };
-})(), e = () => {
+})(), s = () => {
   n.childsTest();
 };
 window.addEventListener("load", () => {
-  e();
+  s();
 });
 //# sourceMappingURL=mainscript.js.map
