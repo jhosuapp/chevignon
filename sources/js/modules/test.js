@@ -1,7 +1,7 @@
 const Test = (()=>{
 
     const TestConfig = ()=>{
-        console.log('función ejecutadaa');
+        console.log('función a');
     }
 
 
