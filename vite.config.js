@@ -3,6 +3,9 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   root: 'sources',
+  server: {
+    open: '/templates/index.html',
+  },
   build: {
     lib: {
       entry: resolve(__dirname, 'sources/js/app.js'),
