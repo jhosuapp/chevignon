@@ -1,2 +1,2 @@
-(function(n){typeof define=="function"&&define.amd?define(n):n()})(function(){"use strict";const n=(()=>{const e=()=>{console.log("Ultima funcionalidad test")};return{childsTest:function(){try{e()}catch(s){}}}})(),t=()=>{n.childsTest()},i="";window.addEventListener("load",()=>{t()})});
+(function(i){typeof define=="function"&&define.amd?define(i):i()})(function(){"use strict";const i=(()=>({childsVideo:function(){try{VideoConfig()}catch(d){}}}))(),n=()=>{i.childsVideo()},e="";window.addEventListener("load",()=>{n()})});
 //# sourceMappingURL=mainscript.umd.cjs.map

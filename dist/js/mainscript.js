@@ -1,19 +1,14 @@
-const n = (() => {
-  const t = () => {
-    console.log("Ultima funcionalidad test");
-  };
-  return {
-    childsTest: function() {
-      try {
-        t();
-      } catch (e) {
-      }
+const i = (() => ({
+  childsVideo: function() {
+    try {
+      VideoConfig();
+    } catch (d) {
     }
-  };
-})(), s = () => {
-  n.childsTest();
+  }
+}))(), o = () => {
+  i.childsVideo();
 };
 window.addEventListener("load", () => {
-  s();
+  o();
 });
 //# sourceMappingURL=mainscript.js.map
