@@ -1,2 +1,2 @@
-(function(i){typeof define=="function"&&define.amd?define(i):i()})(function(){"use strict";const i=(()=>({childsVideo:function(){try{VideoConfig()}catch(d){}}}))(),n=()=>{i.childsVideo()},e="";window.addEventListener("load",()=>{n()})});
+(function(t){typeof define=="function"&&define.amd?define(t):t()})(function(){"use strict";const t=(()=>{const o=()=>{const e=document.querySelector(".loader");setTimeout(()=>{e.classList.add("active")},1e3)},c=()=>{const e=document.querySelector(".main-content");setTimeout(()=>{e.classList.add("enable-animation")},2500)};return{childsLoader:function(){try{o()}catch(e){}try{c()}catch(e){}}}})(),n=()=>{t.childsLoader()},i="";window.addEventListener("load",()=>{n()})});
 //# sourceMappingURL=mainscript.umd.cjs.map

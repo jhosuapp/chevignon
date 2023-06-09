@@ -1,7 +1,7 @@
 //COMPONENTS
-import { getChildsVideo } from "./modules/video";
+import { getChildsLoader } from "./modules/Loader";
 import "../sass/main.scss";
 
 window.addEventListener('load', ()=>{
-    getChildsVideo();
+    getChildsLoader();
 });

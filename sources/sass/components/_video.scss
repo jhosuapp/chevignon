@@ -18,10 +18,10 @@
 .video-img{
     position: absolute;
     z-index: 1;
-    left: 0;
+    left: -100%;
     top: 50px;
     picture{
-        width: 200px;
+        width: 28vh;
         position: relative;
         display: flex;
     }
@@ -33,15 +33,16 @@
 .video-dsc{
     position: absolute;
     z-index: 1;
-    max-width: 42.5%;
+    max-width: 37%;
     width: 90%;
     right: 10%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    opacity: 0;
     picture{
         display: flex;
-        width: 55vh;
+        width: 50vh;
         margin-bottom: 40px;
         img{
             width: 100%;
@@ -60,21 +61,31 @@
         }
     }
 }
+
 .video-polygon{
     position: absolute;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-    width: 100%;
+    width: 90vw;
     height: 100vh;
     right: -20%;
     top: 0;
     background: linear-gradient(185.78deg, #FFFFFF 11.51%, rgba(255, 255, 255, 0) 100%);
     backdrop-filter: blur(2px);
+    &__ctn{
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        height: 0;
+        top: 0;
+    }
 }
+
 @media(max-width: fun.breakpoints('laptop-small')){
     .video-dsc{
         max-width: 60%;
     }
 }
+
 @media(max-width: fun.breakpoints('ipad-big')){
     .video-ctn{
         align-items: flex-end;
@@ -106,5 +117,28 @@
             width: 300px
         }
         max-width: 90%;
+    }
+    .video-img{
+        top: unset;
+        bottom: -100%;
+        left: unset;
+    }
+}
+
+@media(max-width: fun.breakpoints('ipad-small')){
+    .video-img{
+        picture{
+            width: 180px;
+        }
+    }
+    .video-dsc{
+        picture{
+            margin-bottom: 20px;
+        }
+    }
+    .video-polygon{
+        &__ctn{
+            width: 170vw;
+        }
     }
 }

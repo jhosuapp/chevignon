@@ -6,20 +6,34 @@
     text-align: center;
     background-color: fun.color('secondary');
     color: fun.color('white');
-    height: 9vh;
-    font-size: 3vh;
+    height: 7.5vh;
+    font-size: 2.5vh;
     text-transform: uppercase;
     font-weight: 800;
     max-width: 90%;
     width: 100%;
-    border: 2px solid fun.color('secondary');
     transition: .5s ease;
     transition-property: background-color, color;
-    &:hover{
-        background-color: transparent;
-        color: fun.color('secondary');
+    position: relative;
+    span{
+      position: relative;
+      z-index: 9;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: fun.color('primary');
+      width: 0;
+      left: 0;
+      transition: .5s ease width;
+    }
+    &:hover::after{
+      width: 100%;
     }
 }
+
 
 @media(max-width: fun.breakpoints('ipad-big')){
     .btn{
