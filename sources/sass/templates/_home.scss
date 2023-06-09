@@ -2,13 +2,13 @@
 @use '../base/mixin' as mix;
 
 section{
-    background-color: fun.color('primary');
+    background-color: fun.color('background');
     @include mix.flex;
     height: 100vh;
     width: 100%;
-    color: fun.color('white');
+    color: fun.color('background');
     :is(h1, a){
-        color: fun.color('white');
+        color: fun.color('secondary');
     }
     h1{
         font-size: 2rem;
@@ -23,6 +23,6 @@ section{
 
 @media(max-width: fun.breakpoints('ipad-small')){
     section{
-        background-color: fun.color('black');
+        background-color: fun.color('background');
     }
 }
