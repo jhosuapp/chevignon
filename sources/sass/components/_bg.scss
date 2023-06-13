@@ -1,5 +1,64 @@
+@use '../base/functions' as fun;
+
 .bg{
-    background-image: url("../../assets/images/bg.png");
+    background-image: url("../../assets/images/png/bg.png");
     background-repeat: no-repeat;
-    background-size: cover;    
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.bg-polygon-right{
+    position: absolute;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    width: 100%;
+    height: 100vh;
+    right: -20%;
+    top: 0;
+    background: linear-gradient(185.78deg, #FFFFFF 11.51%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(2px);
+}
+
+.bg-polygon-left{
+    position: absolute;
+    clip-path: polygon(25% 100%, 100% 100%, 75% 0%, 0% 0%);
+    width: 100%;
+    height: 100vh;
+    left: -20%;
+    top: 0;
+    background: linear-gradient(185.78deg, #FFFFFF 11.51%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(2px);
+}
+
+@media(max-width: fun.breakpoints('ipad-big')){
+    
+    
+   
+    .bg-polygon-right{
+        right: unset;
+        width: 170vw;
+        transform: rotate(20deg);
+        height: 130vh;
+        top: -150px;
+    }
+
+    .bg-polygon-left{
+        left: unset;
+        width: 170vw;
+        transform: rotate(-10deg);
+        height: 130vh;
+        top: -150px;
+    }
+}
+
+
+@media(max-width: fun.breakpoints('mobile')){
+    .bg{
+        background-image: url("../../assets/images/png/bg-mobile.png");
+        background-size: cover;
+        }
 }
