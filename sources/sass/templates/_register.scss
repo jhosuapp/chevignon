@@ -1,28 +1,76 @@
 @use '../base/functions' as fun;
 @use '../base/mixin' as mix;
 
-// section{
-//     background-color: fun.color('background');
-//     @include mix.flex;
-//     height: 100vh;
-//     width: 100%;
-//     color: fun.color('background');
-//     :is(h1, a){
-//         color: fun.color('secondary');
-//     }
-//     h1{
-//         font-size: 2rem;
-//     }
-//     a{
-//         text-decoration: underline;
-//         &:hover{
-//             text-decoration: none;
-//         }
-//     }
-// }
+.register-main{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-// @media(max-width: fun.breakpoints('ipad-small')){
-//     section{
-//         background-image: url("../../assets/images/bg-mobile.png");
-//     }
-// }
+.register-content{
+    position: absolute;
+    z-index: 1;
+    max-width: 42.5%;
+    width: 90%;
+    top: 5%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        picture{
+            display: flex;
+            width: 15vh;
+            margin-bottom: 40px;
+            img{
+                width: 100%;
+            }
+        }
+        h1{
+            color: fun.color("secondary");
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 21px;
+        }
+        h3{
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 20px 0 30px;
+            
+        }
+    
+}
+
+.register-text{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media(max-width: fun.breakpoints('ipad-big')){
+    .register-content{
+        right: unset;
+        max-width: 85%;
+    }
+   
+    .register-text{
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        left: calc(50% - 45%);
+        top: 50px;
+        .ctm-fonts{
+            text-align: center;
+            align-items: center;
+        }
+       
+    }
+}
+
+
+ 
