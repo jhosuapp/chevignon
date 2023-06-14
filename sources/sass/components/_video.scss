@@ -64,13 +64,13 @@
 
 .video-polygon{
     position: absolute;
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-    width: 90vw;
-    height: 100vh;
-    right: -20%;
-    top: 0;
-    background: linear-gradient(185.78deg, #FFFFFF 11.51%, rgba(255, 255, 255, 0) 100%);
+    width: 50vw;
+    height: 195vh;
+    right: 0%;
+    background: linear-gradient(185.78deg, #FFFFFF 5.51%, rgba(255, 255, 255, 0) 70%);
     backdrop-filter: blur(2px);
+    transform: rotate(30deg);
+    top: -40vh;
     &__ctn{
         overflow: hidden;
         position: absolute;
@@ -78,6 +78,29 @@
         height: 0;
         top: 0;
     }
+    &.red{
+        background: linear-gradient(184.16deg, #792424 1%, rgba(230, 45, 43, 0) 70%);
+        right: 54%;
+        max-width: 18vw;
+    }
+    &.green{
+        background:linear-gradient(188.91deg, #627220 1%, rgba(42, 136, 38, 0) 70%);
+        right: 75%;
+        max-width: 28vw;
+    }
+    // &.green,
+    // &.red{
+    //     &::before,
+    //     &::after{
+    //         content: "";
+    //         width: 10vw;
+    //         height: 10vw;
+    //         clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    //         background-color: fun.color('white');
+    //         position: absolute;
+    //         top: 0;
+    //     }
+    // }
 }
 
 @media(max-width: fun.breakpoints('laptop-small')){
@@ -100,6 +123,14 @@
         transform: rotate(20deg);
         height: 130vh;
         top: -150px;
+        &.red{
+            right: 4%;
+            top: 19%;
+        }
+        &.green{
+            left: -32%;
+            right: unset; 
+        }
     }
     .video-dsc{
         justify-content: center;
@@ -139,6 +170,24 @@
     .video-polygon{
         &__ctn{
             width: 170vw;
+        }
+        &.red,
+        &.green{
+            transform: rotate(30deg);
+        }
+        &.green{
+            top: -10%;
+            width: 100px;
+            max-width: 100px;
+            right: unset;
+            height: 400px;
+            left: 12.5%;
+        }
+        &.red{
+            right: 27%;
+            width: 200px;
+            max-width: 150px;
+            top: 25%;
         }
     }
 }
