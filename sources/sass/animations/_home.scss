@@ -1,11 +1,5 @@
 @use '../base/functions' as fun;
 
-.video-polygon{
-    &__ctn{
-        transition: .5s ease height;
-    }
-}
-
 .video-img{
     transition: .5s ease;
     transition-property: left, bottom;
@@ -16,11 +10,6 @@
 }
 
 .enable-animation{
-    .video-polygon{
-        &__ctn{
-            height: 100vh;
-        }
-    }
     .video-dsc{
         opacity: 1;
         transition-delay: .2s;  
@@ -35,7 +24,7 @@
     .enable-animation{
         .video-img{
             left: unset; 
-            bottom: 0;
+            bottom: 10px;
         }
     }
 }

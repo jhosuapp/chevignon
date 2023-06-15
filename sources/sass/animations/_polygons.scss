@@ -1,0 +1,19 @@
+.video-polygon,
+.ranking-polygon{
+    &__ctn{
+        transition: .5s ease height;
+        &.bottom{
+            bottom: 0;
+            top: unset;
+        }
+    }
+}
+
+.enable-animation{
+    .video-polygon,
+    .ranking-polygon{
+        &__ctn{
+            height: 100vh;
+        }
+    }
+}

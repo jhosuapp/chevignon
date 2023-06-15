@@ -10,7 +10,6 @@
     font-size: 2.5vh;
     text-transform: uppercase;
     font-weight: 800;
-    max-width: 424px;
     width: 100%;
     transition: .5s ease;
     transition-property: background-color, color;
@@ -32,12 +31,28 @@
     &:hover::after{
       width: 100%;
     }
+    &--secondary{
+      background-color: transparent;
+      border: 2px solid fun.color('secondary');
+      color: fun.color('secondary');
+      &::after{
+        background-color: fun.color('secondary');
+      }
+      &:hover{
+        color: fun.color('white');
+      }
+    }
+    &-rem{
+      font-size: 1.8rem;
+      height: 50px;
+      padding: 0 20px;
+    }
 }
 
 
 @media(max-width: fun.breakpoints('ipad-big')){
     .btn{
-        font-size: 18px;
+        font-size: 1.8rem;
         height: 50px;
     }
 }
@@ -45,5 +60,9 @@
     .btn{
         font-size: 17px;
         height: 45px;
+        &-rem{
+          height: 40px;
+          font-size: 1.4rem;
+        }
     }
 }

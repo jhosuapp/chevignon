@@ -2,20 +2,43 @@
 
 .ctm-fonts{
     h1{
-        font-size: 6.5vh;
+        font-size: 6vh;
         line-height: 1;
     }
     h2{
         font-size: 3rem;
     }
     h3{
-        font-size: 3.5vh;
+        font-size: 3vh;
     }
     h4{
 
     }
     p{
-        font-size: 2.3vh;
+        font-size: 2.1vh;
+    }
+    &--uppercase{
+        h1, h2, h3, h4, p{
+            text-transform: uppercase;
+        }
+    }
+}
+
+.ctm-fonts-rem{
+    h1{
+        font-size: 4.25rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+    &--uppercase{
+        text-transform: uppercase;
     }
 }
 
@@ -47,8 +70,30 @@
         h3{
             font-size: 2rem;
         }
-        p{
-            font-size: 2vh;
+        &--uppercase{
+            h1{
+                font-size: 2.8rem;
+            }   
+            h2{
+                font-size: 2.7rem;
+            }
+            h3{
+                font-size: 1.7rem;
+            }
+            p{
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .ctm-fonts-rem{
+        h1{
+            font-size: 3.5rem;
+        }
+        h2{
+            font-size: 2.3rem;
+        }
+        h3{
+            font-size: 1.5rem;
         }
     }
 }
