@@ -1,10 +1,10 @@
-const n = (() => {
-  const t = () => {
+const r = (() => {
+  const n = () => {
     const e = document.querySelector(".loader");
     setTimeout(() => {
       e.classList.add("active");
     }, 1e3);
-  }, o = () => {
+  }, t = () => {
     const e = document.querySelector(".main-content");
     setTimeout(() => {
       e.classList.add("enable-animation");
@@ -13,19 +13,39 @@ const n = (() => {
   return {
     childsLoader: function() {
       try {
-        t();
+        n();
       } catch (e) {
       }
       try {
-        o();
+        t();
       } catch (e) {
       }
     }
   };
+})(), i = () => {
+  r.childsLoader();
+}, s = (() => {
+  const n = () => {
+    const t = () => {
+      const e = screen.height, o = document.querySelectorAll(".ranking-dsc__ctn"), c = e - o[0].scrollHeight;
+      o[1].style.maxHeight = `${c}px`;
+    };
+    t(), window.addEventListener("resize", () => {
+      t();
+    });
+  };
+  return {
+    childsRanking: function() {
+      try {
+        n();
+      } catch (t) {
+      }
+    }
+  };
 })(), a = () => {
-  n.childsLoader();
+  s.childsRanking();
 };
 window.addEventListener("load", () => {
-  a();
+  i(), a();
 });
 //# sourceMappingURL=mainscript.js.map

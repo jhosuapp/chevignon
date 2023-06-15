@@ -125,22 +125,6 @@
     flex-direction: column;
 }
 
-.register-logo{
-    position: absolute;
-    width: 67vh;
-    left: 12%;
-    top: 15%;
-    z-index: 1;
-    picture{
-        display: flex;
-        margin-bottom: 40px;
-        img{
-            width: 100%;
-        }
-    }
-
-}
-
 
 @media(max-width: fun.breakpoints('laptop')){
     .register-logo{
@@ -157,17 +141,12 @@
             font-size: 3vh;
         }
         
-    }
-   
-    .register-text{
-        
-       
-    }
+    }  
 }
 
 @media(max-width: fun.breakpoints('ipad-big')){
 
-    .register-logo{
+    .chevignon-logo{
         display: none;
     }
 

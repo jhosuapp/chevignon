@@ -1,0 +1,27 @@
+.chevignon-logo{
+    position: absolute;
+    width: 39vw;
+    top: 15%;
+    z-index: 1;
+
+    &.left{
+        left: 12%;
+        top: 15%;
+        }
+
+    &.right{
+        right: 10%;
+        top: 15%;
+    }
+
+    picture{
+        display: flex;
+        margin-bottom: 40px;
+        img{
+            width: 100%;
+        }
+    }
+
+    
+
+}
