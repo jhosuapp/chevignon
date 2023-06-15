@@ -43,7 +43,7 @@
     height: 195vh;
     right: 0%;
     background: linear-gradient(185.78deg, #FFFFFF 19.53%, rgba(255, 255, 255, 0) 63.53%);
-    transform: rotate(40deg);
+    transform: rotate(26deg);
     top: -40vh;
     z-index: 1;
     &__ctn{
@@ -55,13 +55,13 @@
     }
     &.green{
         background:linear-gradient(188.91deg, #627220 1%, rgba(42, 136, 38, 0) 70%);
-        left: 8.3%;
+        left: 15.5%;
         max-width: 25vw;
         z-index: 0;
     }
     &.red{
         background: linear-gradient(184.16deg, #792424 1%, rgba(230, 45, 43, 0) 70%);
-        left: -9%;
+        left: 1.5%;
         max-width: 12vw;
         z-index: 0;
     }
@@ -150,7 +150,12 @@
     }
 
     .register-content{
-
+        .ctm-fonts h1{
+            font-size: 5.5vh;
+        }
+        .ctm-fonts h3 {
+            font-size: 3vh;
+        }
         
     }
    
