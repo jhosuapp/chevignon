@@ -62,7 +62,6 @@
         }
     }
     .ctm-fonts h1{
-        color: fun.color("secondary");
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 21px;
@@ -70,16 +69,11 @@
     .ctm-fonts h3{
         font-weight: 400;
         text-align: center;
-        max-width: 478px;
         text-transform: uppercase;
         margin: 20px 0 30px;
         
     }
-    .btn{
-        width: 80%;
-        height: 55px;
-        
-    }
+    
     
 }
 
@@ -135,7 +129,7 @@ form {
     .chevignon-logo{
         display: none;
     }
-    
+
     .verify-code-content{
         left: unset;
         max-width: 85%;
