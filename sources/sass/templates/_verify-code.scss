@@ -133,6 +133,10 @@ form {
     .verify-code-content{
         left: unset;
         max-width: 85%;
+
+        .btn{
+            max-width: 335px;
+        }
     }
    
     .verify-code-text{

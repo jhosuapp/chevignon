@@ -36,12 +36,34 @@
     }
 }
 
+.register-polygon-small {
+    position: absolute;
+    top: -4%;
+
+    &.left{
+        right: 46%;
+        width: 139px;
+        height: 130px;
+        clip-path: polygon(71% 0, 98% 7%, 16% 100%, -11% 99%);
+        background-color: #fff;
+        transform: rotate(166deg);
+    }
+
+    &.right{
+        right: 44%;
+        height: 180px;
+        width: 110px;
+        clip-path: polygon(71% 0, 98% 0%, 16% 100%, -11% 99%);
+        background: linear-gradient(179.75deg, #FFFFFF 11.04%, rgba(255, 255, 255, 0) 84.48%);
+        transform: rotate(180deg);
+    }
+}
 
 .register-polygon{
     position: absolute;
     width: 55vw;
     height: 195vh;
-    right: 0%;
+    right: -3%;
     background: linear-gradient(185.78deg, #FFFFFF 19.53%, rgba(255, 255, 255, 0) 63.53%);
     transform: rotate(26deg);
     top: -40vh;
@@ -55,13 +77,13 @@
     }
     &.green{
         background:linear-gradient(188.91deg, #627220 1%, rgba(42, 136, 38, 0) 70%);
-        left: 15.5%;
+        left: 18.5%;
         max-width: 25vw;
         z-index: 0;
     }
     &.red{
         background: linear-gradient(184.16deg, #792424 1%, rgba(230, 45, 43, 0) 70%);
-        left: 1.5%;
+        left: 4.5%;
         max-width: 12vw;
         z-index: 0;
     }
@@ -100,11 +122,9 @@
             margin: 20px 0 30px;
             
         }
-        /* .btn{
-            width: 80%;
-            height: 55px;
-            
-        } */
+        .btn{
+            width: 55%;
+        }
     
 }
 
@@ -139,6 +159,10 @@
 }
 
 @media(max-width: fun.breakpoints('ipad-big')){
+
+.register-polygon-small {
+    display: none;
+}
 
     .chevignon-logo{
         display: none;
