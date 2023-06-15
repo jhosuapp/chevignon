@@ -172,6 +172,23 @@
     }
 
 
+    .register-polygon{
+        left: -6%;
+        width: 82vw;
+        
+        &.green{
+            background: linear-gradient(187.94deg, #627220 24.71%, rgba(42, 136, 38, 0) 93.95%);
+            left: 95%;
+            max-width: 26vh;
+        }
+        &.red{
+            background: linear-gradient(184.16deg, #792424 2.69%, rgba(230, 45, 43, 0) 97.73%);
+            max-width: 12vw;
+            left: 81.2%;
+        }
+        
+    }
+
 
 
     .register-content{
@@ -235,6 +252,21 @@
             height: 46px;
             
         }
+    }
+
+    .register-polygon{
+        left: -33%;
+        width: 105vw;
+        
+        &.green{
+            left: 105.5%;
+            max-width: 50vh;
+        }
+        &.red{
+            max-width: 20vw;
+            left: 79.2%;
+        }
+        
     }
 
     .register-car-mobile{
