@@ -1,5 +1,8 @@
+@use '../base/functions' as fun;
+
 .video-polygon,
-.ranking-polygon{
+.ranking-polygon,
+.terms-polygon{
     &__ctn{
         transition: .5s ease height;
         &.bottom{
@@ -11,9 +14,20 @@
 
 .enable-animation{
     .video-polygon,
-    .ranking-polygon{
+    .ranking-polygon,
+    .terms-polygon{
         &__ctn{
             height: 100vh;
+        }
+    }
+}
+
+@media(max-width: fun.breakpoints('ipad-big')){
+    .ranking-polygon__ctn{
+        &.green.small,
+        &.red{
+            top: unset;
+            bottom: 0;
         }
     }
 }

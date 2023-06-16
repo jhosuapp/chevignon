@@ -1,0 +1,183 @@
+@use '../base/functions' as fun;
+.terms-polygon{
+    position: absolute;
+    width: 80vw;
+    height: 195vh;
+    right: -10%;
+    background: linear-gradient(185.78deg, #FFFFFF 5.51%, rgba(255, 255, 255, 0) 150%);
+    // backdrop-filter: blur(2px);
+    transform: rotate(30deg);
+    top: -40vh;
+    &__ctn{
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        height: 0;
+        top: 0;
+    }
+    &.white{
+        z-index: 10;
+    }
+    &.green{
+        background: linear-gradient(187.94deg, #627220 24.71%, rgba(42, 136, 38, 0) 70%);
+        max-width: 15vw;
+        right: unset;
+        left: 10%;
+        z-index: 8;
+        &.small{
+            left: unset;
+            right: 0%;
+            height: 70vh;
+            max-width: 10vw;
+            top: 10vh;
+            max-width: 7vw;
+            z-index: 11;
+        }
+    }
+    &.red{
+        background: linear-gradient(184.16deg, #792424 2.69%, rgba(230, 45, 43, 0) 70%);
+        max-width: 12.5vw;
+        right: unset;
+        left: -4.5%;
+        z-index: 7;
+        &.small{
+            background: linear-gradient(0deg, #792424 2.69%, rgba(230, 45, 43, 0) 97.73%);
+            left: unset;
+            right: 50%;
+            bottom: -60vh;
+            height: 100vh;
+            top: unset;
+            max-width: 7vw;
+            z-index: 11;
+        }
+    }
+}
+
+.terms-dsc{
+    position: absolute;
+    height: 90vh;
+    top: calc(50% - 45vh);
+    right: 10%;
+    width: 50%;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    picture{
+        display: flex;
+        justify-content: center;
+        width: 60px;
+        margin: auto;
+        img{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    h1{
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+    }
+    p{
+        margin-bottom: 15px;
+    }
+}
+
+.terms-runner{
+    position: absolute;
+    z-index: 9;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    picture{
+        img{
+            width: 50%;
+            left: 2%;
+            position: relative;
+        }
+    }    
+}
+
+@media(max-width: fun.breakpoints('ipad-big')){
+    .terms-polygon{
+        &.white{
+            left: 0;
+            width: 100vw;
+        }
+        &.green{
+            left: -30%;
+            right: unset;
+            max-width: 22vw;
+            &.small{
+                bottom: 0;
+                top: unset;
+                width: 80px;
+                max-width: 80px;
+            }
+        }
+        &.red{
+            display: none;
+            &.small{
+                background: linear-gradient(184.16deg, #792424 2.69%, rgba(230, 45, 43, 0) 135%);
+                display: block;
+                right: 0;
+                bottom: 0;
+                top: unset;
+                height: 300px;
+                width: 80px;
+                max-width: 80px;
+            }
+        }
+    }
+    .terms-dsc{
+        max-width: 100%;
+        width: 85%;
+        left: unset;
+        right: unset;
+    }
+    .terms-runner{
+        
+        picture{
+            img{
+                width: 90%;
+                left: calc(50% - 45%);
+            }
+        }    
+    }
+    
+}
+
+
+@media(max-width: fun.breakpoints('mobile')){
+    .terms-polygon{
+        &.white{
+            left: -30vw;
+            width: 160vw;
+        }
+        &.green{
+            left: -70vw;
+            right: unset;
+            max-width: 30vw;
+            &.small{
+                bottom: 0;
+                top: unset;
+                width: 80px;
+                max-width: 80px;
+            }
+        }
+        &.red{
+            display: none;
+            &.small{
+                background: linear-gradient(184.16deg, #792424 2.69%, rgba(230, 45, 43, 0) 135%);
+                display: block;
+                right: 0;
+                bottom: 0;
+                top: unset;
+                height: 300px;
+                width: 80px;
+                max-width: 80px;
+            }
+        }
+    }
+}

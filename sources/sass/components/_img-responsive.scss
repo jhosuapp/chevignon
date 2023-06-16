@@ -1,0 +1,23 @@
+@use '../base/functions' as fun;
+
+
+.responsive-images{
+    img{
+        &:last-child{
+            display: none;
+        }
+    }
+}
+
+@media(max-width: fun.breakpoints('ipad-small')){
+    .responsive-images{
+        img{
+            &:first-child{
+                display: none;
+            }
+            &:last-child{
+                display: block;
+            }
+        }
+    }    
+}

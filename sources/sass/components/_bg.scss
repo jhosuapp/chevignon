@@ -1,5 +1,10 @@
 @use '../base/functions' as fun;
 
+.bg-general{
+    background-image: url('../../assets/images/jpg/ranking-bg.jpg'), url('./../assets/images/jpg/ranking-bg.jpg');
+    background-size: cover;
+}
+
 .bg{
     background-image: url("../../assets/images/png/register-bg.png");
     background-repeat: no-repeat;

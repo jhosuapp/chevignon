@@ -1,9 +1,5 @@
 @use '../base/functions' as fun;
 
-.ranking-ctn{
-    background-image: url('../../assets/images/jpg/ranking-bg.jpg'), url('./../assets/images/jpg/ranking-bg.jpg');
-    background-size: cover;
-}
 .ranking-dsc{
     flex-direction: column;
     padding: 40px 0;
@@ -42,7 +38,7 @@
     height: 120vh;
     right: 0%;
     background:  linear-gradient(to right, rgba(255, 255, 255, 0.29) 14.87%, rgba(255, 255, 255, 0.5) 50.87%, rgba(255, 255, 255, 0.6) 87.28%, rgba(255, 255, 255, 0) 100.26%);
-    backdrop-filter: blur(2px);
+    // backdrop-filter: blur(2px);
     transform: rotate(50deg);
     left: -70px;
     top: -30px;
