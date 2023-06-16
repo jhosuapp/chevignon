@@ -9,10 +9,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
 
-.verify-polygon-small {
+
+.polygon-small {
     position: absolute;
     top: 0%;
     transform: skew(28deg);
@@ -32,7 +32,21 @@
     }
 }
 
-.verify-polygon{
+.polygon-med {
+    position: absolute;
+    z-index: 1;
+
+    &.red{
+        bottom: 0%;
+        right: 52%;
+        width: 6%;
+        height: 27%;
+        background: linear-gradient(0deg, #79242F 6.83%, rgba(230, 45, 43, 0) 101.83%);
+        transform: skew(-26deg);
+    }
+}
+
+.polygon{
     position: absolute;
     width: 55vw;
     height: 195vh;
@@ -64,7 +78,7 @@
     
 }
 
-.verify-code-content{
+.content{
     position: absolute;
     z-index: 1;
     max-width: 42.5%;
@@ -107,7 +121,7 @@
        
 }
 
-.verify-code-text{
+.text{
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -117,6 +131,8 @@
         max-width: 400px;
         margin-bottom: 20px;
     }
+}
+
 }
 
 .input-cont{
@@ -164,15 +180,19 @@ form {
     }
 
 
-.verify-polygon-small {
-    display: none;
-}
-    .verify-code-content{
+
+
+.verify-code-main{
+    .content{
         left: unset;
         max-width: 70%;
     }
+
+    .polygon-small {
+        display: none;
+    }
    
-    .verify-code-text{
+    .text{
         justify-content: center;
         align-items: center;
         margin: auto;
@@ -184,7 +204,7 @@ form {
         }
        
     }
-
+}
     form {    
         
         .form-control {
@@ -198,7 +218,10 @@ form {
 
 @media(max-width: fun.breakpoints('mobile')){
 
-    .verify-code-content{
+
+.verify-code-main{
+
+    .content{
         left: unset;
         width: 80%;
         max-width: 400px;
@@ -239,6 +262,7 @@ form {
             font-size: 15px;
         }
       }
+    }
 }
 
 
