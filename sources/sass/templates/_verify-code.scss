@@ -14,24 +14,21 @@
 
 .verify-polygon-small {
     position: absolute;
-    top: -4%;
+    top: 0%;
+    transform: skew(-28deg);
 
     &.left{
-        right: 47%;
-        height: 183px;
-        width: 110px;
-        clip-path: polygon(71% 0, 98% 0%, 16% 100%, -11% 99%);
-        background: linear-gradient(179.75deg, #FFFFFF 11.04%, rgba(255, 255, 255, 0) 84.48%);
-        transform: rotate(180deg) matrix(-1, 0, 0, 1, 0, 0);
-        }
+        right: 49%;
+        width: 40px;
+        height: 100px;
+        background-color: #FFFFFF;
+    }
 
     &.right{
-        right: 40%;
-        width: 139px;
-        height: 215px;
-        clip-path: polygon(71% 0, 98% 0%, 16% 100%, -11% 99%);
-        background-color: #FFFFFF;
-        transform: rotate(183deg) matrix(-1, 0, 0, 1, 0, 0);
+        right: 46%;
+        width: 35px;
+        height: 140px;
+        background: linear-gradient(51.75deg, #FFFFFF 11.04%, rgba(255, 255, 255, 0) 92.48%);
     }
 }
 
@@ -72,7 +69,7 @@
     z-index: 1;
     max-width: 42.5%;
     width: 90%;
-    top: 5%;
+    top: 3%;
     left: 3%;
     display: flex;
     flex-direction: column;
@@ -81,26 +78,33 @@
     picture{
         display: flex;
         width: 11vh;
-        margin-bottom: 40px;
+        margin-bottom: 22px;
         img{
             width: 100%;
         }
     }
-    .ctm-fonts h1{
+    .ctm-fonts{
         text-align: center;
         text-transform: uppercase;
-        margin-bottom: 21px;
-    }
-    .ctm-fonts h3{
-        font-weight: 400;
-        text-align: center;
-        max-width: 70%;
-        text-transform: uppercase;
-        margin: 20px 0 30px;
         
+        h1{
+            margin-bottom: 20px;
+        }
+    
+        h2{
+            font-size: 2.3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    
+        h3{
+            font-size: 2rem;
+            font-weight: 400;
+            max-width: 80%;
+            margin-bottom: 20px;
+        }
     }
-    
-    
+       
 }
 
 .verify-code-text{
@@ -109,7 +113,8 @@
     flex-direction: column;
     
     .btn{
-        width: 60%;
+        width: 80%;
+        max-width: 400px;
         margin-bottom: 20px;
     }
 }
@@ -164,12 +169,7 @@ form {
 }
     .verify-code-content{
         left: unset;
-        max-width: 85%;
-
-        .btn{
-            width: 80%;
-            max-width: 335px;
-        }
+        max-width: 70%;
     }
    
     .verify-code-text{
@@ -199,9 +199,33 @@ form {
 @media(max-width: fun.breakpoints('mobile')){
 
     .verify-code-content{
+        left: unset;
+        width: 80%;
+        max-width: 400px;
+
+        picture{
+            margin-bottom: 12px;
+        }
+        
 
         .btn{
             width: 100%;
+        }
+
+        .ctm-fonts{
+            
+            h1{
+                font-size: 3rem;
+            }
+        
+            h2{
+                font-size: 1.5rem;
+            }
+        
+            h3{
+                font-size: 1.6rem;
+                max-width: unset;
+            }
         }
     }
     
@@ -209,11 +233,10 @@ form {
     form {    
         
         .form-control {
-          height: 35px;
-          width: 35px;
-          font-size: 15px;
-          
-          
+            height: 37px;
+            width: 13%;
+            max-width: 45px;
+            font-size: 15px;
         }
       }
 }

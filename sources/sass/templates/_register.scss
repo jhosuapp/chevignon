@@ -39,12 +39,12 @@
 .register-polygon-small {
     position: absolute;
     top: 0%;
+    transform: skew(-28deg);
 
     &.left{
         right: 49%;
         width: 40px;
         height: 100px;
-        transform: skew(-28deg);
         background-color: #FFFFFF;
     }
 
@@ -52,7 +52,6 @@
         right: 46%;
         width: 35px;
         height: 140px;
-        transform: skew(-28deg);
         background: linear-gradient(51.75deg, #FFFFFF 11.04%, rgba(255, 255, 255, 0) 92.48%);
     }
 }
