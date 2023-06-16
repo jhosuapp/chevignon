@@ -38,28 +38,49 @@
 
 .register-polygon-small {
     position: absolute;
-    top: -4%;
+    top: 0%;
 
     &.left{
-        right: 46%;
-        width: 139px;
-        height: 130px;
-        clip-path: polygon(71% 0, 98% 7%, 16% 100%, -11% 99%);
-        background-color: #fff;
-        transform: rotate(166deg);
+        right: 49%;
+        width: 40px;
+        height: 100px;
+        transform: skew(-28deg);
+        background-color: #FFFFFF;
     }
 
     &.right{
-        right: 44%;
-        height: 180px;
-        width: 110px;
-        clip-path: polygon(71% 0, 98% 0%, 16% 100%, -11% 99%);
-        background: linear-gradient(179.75deg, #FFFFFF 11.04%, rgba(255, 255, 255, 0) 84.48%);
-        transform: rotate(180deg);
+        right: 46%;
+        width: 35px;
+        height: 140px;
+        transform: skew(-28deg);
+        background: linear-gradient(51.75deg, #FFFFFF 11.04%, rgba(255, 255, 255, 0) 92.48%);
     }
 }
 
-.register-polygon{
+.register-polygon-med {
+    position: absolute;
+    z-index: 1;
+
+    &.red{
+        bottom: 0%;
+        right: 52%;
+        width: 6%;
+        height: 27%;
+        background: linear-gradient(0deg, #79242F 6.83%, rgba(230, 45, 43, 0) 101.83%);
+        transform: skew(-26deg);
+    }
+
+    &.green{
+        bottom: 10%;
+        right: 0%;
+        width: 6%;
+        height: 64%;
+        background: linear-gradient(179.75deg, #627220 11.04%, rgba(255, 255, 255, 0) 84.48%);
+        transform: skew(-26deg);
+    }
+}
+
+.register-polygon-bg{
     position: absolute;
     width: 55vw;
     height: 195vh;
@@ -160,6 +181,11 @@
 
 @media(max-width: fun.breakpoints('ipad-big')){
 
+
+.register-polygon-med {
+    display: none;
+}
+
 .register-polygon-small {
     display: none;
 }
@@ -169,7 +195,7 @@
     }
 
 
-    .register-polygon{
+    .register-polygon-bg{
         left: -6%;
         width: 82vw;
         
@@ -251,12 +277,12 @@
         } 
     } 
 
-    .register-polygon{
+    .register-polygon-bg{
         left: -33%;
         width: 105vw;
         
         &.green{
-            left: 105.5%;
+            left: 104%;
             max-width: 50vh;
         }
         &.red{
