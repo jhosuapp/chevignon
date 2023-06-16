@@ -9,16 +9,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    .register-bg{
-        width: 100%;
-    }
+   
 
     
 }
 
 .register-car{
     width: 90%;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     left: -8%;
     overflow: hidden;
@@ -189,9 +187,9 @@
     display: none;
 }
 
-    .chevignon-logo{
-        display: none;
-    }
+.chevignon-logo{
+    display: none;
+}
 
 
     .register-polygon-bg{
@@ -210,8 +208,6 @@
         }
         
     }
-
-
 
     .register-content{
         right: unset;

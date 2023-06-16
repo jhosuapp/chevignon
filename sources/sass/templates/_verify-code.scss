@@ -10,7 +10,41 @@
     justify-content: center;
     align-items: center;
 
+    
 
+    .bg-car{
+        width: 90%;
+        height: 100%;
+        position: absolute;
+        left: 12%;
+        overflow: hidden;
+        z-index: 2;
+        
+        picture{
+            position: absolute;
+            width: 80%;
+            bottom: 0;
+            left: 13%;
+            display: flex;
+        }
+        img{
+            width: 100%;
+        }
+    }
+
+    .bg-car-mobile{
+        display: none;
+        width: 90%;
+        position: absolute;
+        bottom: 0%;
+        overflow: hidden;
+        z-index: 3;
+        
+        
+        img{
+            width: 100%;
+        }
+    }
 
 .polygon-small {
     position: absolute;
@@ -18,14 +52,14 @@
     transform: skew(28deg);
 
     &.left{
-        right: 50%;
+        right: 47%;
         width: 40px;
         height: 100px;
         background: linear-gradient(51.75deg, #FFFFFF 11.04%, rgba(255, 255, 255, 0) 92.48%);
     }
 
     &.right{
-        right: 46%;
+        right: 42%;
         width: 35px;
         height: 140px;
         background-color: #FFFFFF;
@@ -38,23 +72,19 @@
 
     &.red{
         bottom: 0%;
-        right: 52%;
-        width: 6%;
+        left: 2%;
+        width: 9%;
         height: 27%;
-        background: linear-gradient(0deg, #79242F 6.83%, rgba(230, 45, 43, 0) 101.83%);
-        transform: skew(-26deg);
+        background: linear-gradient(4.16deg, #820308 -13%, rgba(230, 45, 43, 0) 88.83%);
+        transform: skew(26deg);
     }
 }
 
 .polygon{
     position: absolute;
-    width: 55vw;
     height: 195vh;
-    left: 0%;
-    background: linear-gradient(185.78deg, #FFFFFF 19.53%, rgba(255, 255, 255, 0) 63.53%);
-    transform: rotate(-26deg);
-    top: -40vh;
-    z-index: 1;
+    transform: skew(26deg);
+    
     &__ctn{
         overflow: hidden;
         position: absolute;
@@ -62,16 +92,22 @@
         height: 0;
         top: 0;
     }
+    &.white{
+        width: 62.5vw;
+        left: -4%;
+        background: linear-gradient(185.78deg, #FFFFFF 19.53%, rgba(255, 255, 255, 0) 87.53%);
+        z-index: 2;
+    }
     &.red{
         background: linear-gradient(184.16deg, #792424 2.69%, rgba(230, 45, 43, 0) 97.73%);
         left: 58.5%;
-        max-width: 12vw;
+        width: 14.2vw;
         z-index: 0;
     }
     &.green{
         background: linear-gradient(187.94deg, #627220 24.71%, rgba(42, 136, 38, 0) 93.95%);
         left: 72.5%;
-        max-width: 25vw;
+        width: 25vw;
         z-index: 0;
     }
     
@@ -80,7 +116,7 @@
 
 .content{
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     max-width: 42.5%;
     width: 90%;
     top: 3%;
@@ -188,6 +224,37 @@ form {
         max-width: 70%;
     }
 
+    .bg-car{
+        z-index: 3;
+    }
+
+    .polygon{
+        transform: skew(30deg);
+        width: 91%;
+
+        &.white{
+            left: 10%;
+            width: 90vw;
+        }
+        
+        &.green{
+            background: linear-gradient(187.94deg, #627220 24.71%, rgba(42, 136, 38, 0) 93.95%);
+            left: 100%;
+            width: 12vh;
+            right: 0%;
+        }
+        &.red{
+            background: linear-gradient(184.16deg, #AF0000 40.7%, rgba(230, 45, 43, 0) 89.83%);
+            width: 12vw;
+            left: -2%;
+        }
+        
+    }
+
+    .polygon-med {
+        display: none;
+    }
+
     .polygon-small {
         display: none;
     }
@@ -220,6 +287,53 @@ form {
 
 
 .verify-code-main{
+
+    .bg-car{
+        display: none;
+    }
+
+    .bg-car-mobile{
+        display: unset;
+    }
+
+    .polygon{
+        transform: skew(30deg);
+
+        &.white{
+            left: -3%;
+            width: 140%;
+        }
+        
+        &.green{
+            background: linear-gradient(187.94deg, #627220 24.71%, rgba(42, 136, 38, 0) 93.95%);
+            left: 137%;
+            width: 35%;
+            max-width: 25vh;
+        }
+        &.red{
+            background: linear-gradient(184.16deg, #AF0000 40.7%, rgba(230, 45, 43, 0) 89.83%);
+            width: 31vw;
+            left: -34%;
+        }
+        
+    }
+
+    .polygon-small {
+        display: unset;
+        left: 0%;
+
+        &.right{
+            top: 57%;
+            width: 22px;
+            height: 110px;
+        }
+
+        &.left{
+            top: 63%;
+            width: 14px;
+            height: 110px;
+        }
+    }
 
     .content{
         left: unset;
