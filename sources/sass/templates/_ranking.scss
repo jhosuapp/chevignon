@@ -44,7 +44,8 @@
     background:  linear-gradient(to right, rgba(255, 255, 255, 0.29) 14.87%, rgba(255, 255, 255, 0.5) 50.87%, rgba(255, 255, 255, 0.6) 87.28%, rgba(255, 255, 255, 0) 100.26%);
     backdrop-filter: blur(2px);
     transform: rotate(50deg);
-    left: -50px;
+    left: -70px;
+    top: -30px;
     z-index: 9;
     &__ctn{
         overflow: hidden;
@@ -226,13 +227,36 @@
 @media(max-width: fun.breakpoints('ipad-big')){
     .ranking-polygon{
         &.white{
-            width: 100%;
+            width: 140%;
             min-width: 420px;
-            height: 150vh;
+            height: 160vh;
             background: linear-gradient(184.27deg, rgba(255, 255, 255, 0.65) 21.02%, rgba(255, 255, 255, 0.883194) 61.87%, rgba(255, 255, 255, 0.82) 76.97%, rgba(255, 255, 255, 0) 90.82%);
             transform: rotate(-40deg);
             left: 80px;
+            top: -300px;
+        }
+        &.green{
+            width: 400px;
+            height: 400px;
+            z-index: 9;
             top: -200px;
+            &.small{
+                bottom: -30vh;
+                top: unset;
+                width: 500px;
+                height: 100vh;
+                max-width: 20vw;
+            }
+        }
+        &.red{
+            top: unset;
+            z-index: 9;
+            width: 350px;
+            height: 580px;
+            bottom: -100px;
+            &.small{
+                display: none;
+            }
         }
     }
     .ranking-dsc{
@@ -256,6 +280,11 @@
                     padding: 6px 5px;
                     width: calc(100% - 123px);
                     margin-right: 80px;
+                }
+                &__bg{
+                    left: -50px !important;
+                    width: 55px !important;
+                    height: 70px !important;
                 }
             }
         }
@@ -294,11 +323,28 @@
     }
     .ranking-top{
         &__block p{
-            text-wrap: nowrap;
+            white-space: nowrap;
             text-overflow: ellipsis;
             position: relative;
             overflow: hidden;
             max-width: 100px;
+        }
+    }
+    .ranking-polygon{
+        &.white{
+            height: 270vh;
+            top: -80vh;
+        }
+        &.green{
+            width: 200px;
+            height: 200px;
+            top: -100px;
+            &.small{
+                bottom: -15vh;
+            }
+        }
+        &.red{
+            bottom: 2vh;
         }
     }
 }
