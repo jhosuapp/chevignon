@@ -58,7 +58,7 @@ inputs.forEach(input => {
   })
   
   input.addEventListener('keydown', e => {
-    switch(e.keyCode) {
+    switch(e.key) {
       case KEYBOARDS.backspace:
         handleBackspace(e)
         break
