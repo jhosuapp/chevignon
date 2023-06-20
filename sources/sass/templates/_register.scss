@@ -9,16 +9,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    .register-bg{
-        width: 100%;
-    }
+   
 
     
 }
 
 .register-car{
     width: 90%;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     left: -8%;
     overflow: hidden;
@@ -39,12 +37,12 @@
 .register-polygon-small {
     position: absolute;
     top: 0%;
+    transform: skew(-28deg);
 
     &.left{
         right: 49%;
         width: 40px;
         height: 100px;
-        transform: skew(-28deg);
         background-color: #FFFFFF;
     }
 
@@ -52,7 +50,6 @@
         right: 46%;
         width: 35px;
         height: 140px;
-        transform: skew(-28deg);
         background: linear-gradient(51.75deg, #FFFFFF 11.04%, rgba(255, 255, 255, 0) 92.48%);
     }
 }
@@ -190,9 +187,9 @@
     display: none;
 }
 
-    .chevignon-logo{
-        display: none;
-    }
+.chevignon-logo{
+    display: none;
+}
 
 
     .register-polygon-bg{
@@ -211,8 +208,6 @@
         }
         
     }
-
-
 
     .register-content{
         right: unset;
@@ -298,7 +293,7 @@
         position: absolute;
         bottom: -1%;
         overflow: hidden;
-        z-index: 1;
+        z-index: 2;
         
         
         img{

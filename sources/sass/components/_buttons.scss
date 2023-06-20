@@ -32,6 +32,10 @@
     &:hover::after{
       width: 100%;
     }
+    &--disabled{
+      background-color: #878581;
+      color: fun.color('primary');
+    }
     &--secondary{
       background-color: transparent;
       border: 2px solid fun.color('secondary');
